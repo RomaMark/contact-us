@@ -54,10 +54,10 @@ const inputField = () => {
           className="input_box"
         ></textarea>
       </div>
-      <div>
+      <div className="checkbox">
         <p>
           By submitting this form I accept <a href="/">privacy policy</a> and{" "}
-          <a href="">cookie policy</a>. *
+          <a href="/">cookie policy</a>. *
         </p>
         <p>I would like to receive your newsletter.</p>
       </div>
