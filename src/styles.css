@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(167 208 216);
+  border: none;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+  line-height: 3.75rem;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.input {
+  display: flex;
+  margin-top: 20px;
+  width: 50%;
+  position: relative;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 40px;
+  background-color: white;
+  padding: 20px;
+}
+
+.input_box {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: rgba(208 213 221);
+  padding: 0.625rem 0.875rem;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.input_submit {
+  background-color: rgb(167 208 216);
+  color: rgb(20 9 35);
+  padding: 0.625rem 1.125rem;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
