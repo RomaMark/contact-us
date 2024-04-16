@@ -1,4 +1,5 @@
-import "./styles.css";
+import CheckBox from "./CheckBox";
+import CountrySelector from "./CountrySelector";
 
 const inputField = () => {
   return (
@@ -34,11 +35,7 @@ const inputField = () => {
       </div>
       <div className="max-h-screen flex flex-wrap -mx-2 mb-4">
         <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
-          <input
-            type="text"
-            placeholder="Country"
-            className="input_box"
-          ></input>
+          <CountrySelector />
         </div>
         <div className="w-full md:w-1/2 px-2">
           <input
@@ -54,16 +51,12 @@ const inputField = () => {
           className="input_box"
         ></textarea>
       </div>
-      <div className="checkbox">
-        <p>
-          By submitting this form I accept <a href="/">privacy policy</a> and{" "}
-          <a href="/">cookie policy</a>. *
-        </p>
-        <p>I would like to receive your newsletter.</p>
+      <CheckBox />
+      <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+        <button type="submit" className="input_submit">
+          Submit
+        </button>
       </div>
-      <button type="submit" className="input_submit">
-        Submit
-      </button>
     </div>
   );
 };

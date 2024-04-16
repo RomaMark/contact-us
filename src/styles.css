@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: recklessFont;
+  src: url(/public/fonts/RecklessNeue-Thin.ttf);
+}
+
+@font-face {
+  font-family: denimFont;
+  src: url(/public/fonts/denim.ttf);
+}
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -13,6 +23,7 @@
 }
 
 h1 {
+  font-family: recklessFont;
   font-size: 3rem;
   letter-spacing: -0.02em;
   line-height: 3.75rem;
@@ -22,14 +33,24 @@ a {
   text-decoration: underline;
 }
 
+p {
+  font-family: recklessFont;
+}
+
+.mr-2 {
+  font-family: denimFont;
+}
+
+.blue-text {
+  color: rgb(33 157 251);
+}
+
 .input {
   display: flex;
   margin-top: 20px;
   position: relative;
   flex-direction: column;
   align-items: left;
-  border-radius: 40px;
-  background-color: white;
   padding: 20px;
 }
 
@@ -39,8 +60,6 @@ a {
   border-color: rgba(208 213 221);
   padding: 0.625rem 0.875rem;
   width: 100%;
-  margin-top: 10px;
-  margin-left: 10px;
 }
 
 .input_submit {
@@ -50,4 +69,11 @@ a {
   border-radius: 0.75rem;
   margin-top: 1rem;
   cursor: pointer;
+}
+
+@media (min-height: 900px) {
+  .tall-md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
