@@ -17,7 +17,7 @@ const CheckBox: React.FC = () => {
   return (
     <div className="w-full px-2 mb-4 md:mb-0 space-y-4">
       <div className="flex flex-col">
-        <label>
+        <label className="custom-label">
           <input
             type="checkbox"
             checked={isChecked}

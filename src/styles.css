@@ -7,19 +7,16 @@
   src: url(/public/fonts/RecklessNeue-Thin.ttf);
 }
 
-@font-face {
+/* @font-face {
   font-family: denimFont;
   src: url(/public/fonts/denim.ttf);
-}
+} */
 
-.App {
-  width: 100vw;
-  height: 100vh;
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(167 208 216);
-  border: none;
 }
 
 h1 {
@@ -27,6 +24,24 @@ h1 {
   font-size: 3rem;
   letter-spacing: -0.02em;
   line-height: 3.75rem;
+}
+
+.unlink::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  border-radius: 5px;
+  height: 1px;
+  bottom: -0.125rem;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom left;
+  transition: transform 0.25s, background-color 0.25s;
+}
+.unlink:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom left;
 }
 
 a {
@@ -37,9 +52,9 @@ p {
   font-family: recklessFont;
 }
 
-.mr-2 {
-  font-family: denimFont;
-}
+/* .custom-label {
+  font-family: ;
+} */
 
 .blue-text {
   color: rgb(33 157 251);
