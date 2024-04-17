@@ -12,7 +12,6 @@ const GetCountry: React.FC = () => {
       placeholder="Country"
       searchable
       searchPlaceholder="Search countries"
-      className="country-box"
     />
   );
 };
