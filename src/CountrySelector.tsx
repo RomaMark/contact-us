@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
+import "./styles.css";
 
 const GetCountry: React.FC = () => {
-  const [selected, setSelected] = useState<string>("");
+  const [selected, setSelected] = useState("");
 
   return (
     <ReactFlagsSelect
@@ -11,6 +12,7 @@ const GetCountry: React.FC = () => {
       placeholder="Country"
       searchable
       searchPlaceholder="Search countries"
+      className="country-box"
     />
   );
 };

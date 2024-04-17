@@ -15,14 +15,14 @@ const CheckBox: React.FC = () => {
   };
 
   return (
-    <div className="w-full px-2 mb-4 md:mb-0 space-y-4">
+    <div className="w-full md:mb-0 space-y-4">
       <div className="flex flex-col">
         <label className="custom-label">
           <input
             type="checkbox"
             checked={isChecked}
             onChange={handleCheckboxChange}
-            className="mr-2"
+            className="mr-2 mt-4"
           />{" "}
           By submitting this form I accept{" "}
           <a href="/" className="blue-text">
