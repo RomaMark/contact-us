@@ -1,6 +1,6 @@
 # Contact us
 
-## Instructions to setup
+## Instructions for setup
 
 1. Clone the project
 
