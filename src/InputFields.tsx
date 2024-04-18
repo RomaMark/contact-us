@@ -1,13 +1,13 @@
 import CheckBox from "./CheckBox";
 import CountrySelector from "./CountrySelector";
-import YourComponent from "./error";
+import MyError from "./error";
 
 const InputFields = () => {
   return (
-    <div className="container-size bg-white rounded-[40px] p-10 px-14 ml-28">
+    <div className="container-size bg-white rounded-[40px] py-8 px-16 ml-28">
       <div className="flex mb-10">
         <h1>Contact us</h1>
-        <div className="flex justify-center items-center ml-auto">
+        <div className="flex justify-center items-center ml-auto pt-4">
           <button type="button">
             <svg
               className="h-10 w-10"
@@ -29,7 +29,7 @@ const InputFields = () => {
       </div>
       <div className="max-h-screen flex flex-wrap -mx-2 mb-4">
         <div className="md:w-1/2 px-2 mb-4 md:mb-0">
-          <YourComponent />
+          <MyError />
         </div>
         <div className="w-full md:w-1/2 px-2">
           <input
@@ -41,7 +41,7 @@ const InputFields = () => {
       </div>
       <div className="max-h-screen flex flex-wrap -mx-2 mb-4">
         <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
-          <input type="text" placeholder="Email" className="input_box"></input>
+          <input type="email" placeholder="Email" className="input_box"></input>
         </div>
         <div className="w-full md:w-1/2 px-2">
           <input
@@ -67,11 +67,11 @@ const InputFields = () => {
         <textarea
           placeholder="What would you like to talk about?"
           className="resize-none input_box"
-          rows={5}
+          rows={6}
         ></textarea>
       </div>
       <CheckBox />
-      <div className="md:w-1/2 px-2 mb-4 md:mb-0">
+      <div className="md:w-1/2 md:mb-0">
         <button type="submit" className="input_submit">
           Submit
         </button>

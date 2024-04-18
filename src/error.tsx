@@ -1,19 +1,15 @@
 import React, { useState } from "react";
 
-const YourComponent: React.FC = () => {
+const MyError: React.FC = () => {
   const [showError, setShowError] = useState(false);
 
   const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
-    // Check if the input is empty
-    if (event.target.value.trim() === "") {
-      setShowError(true);
-    } else {
-      setShowError(false);
-    }
+    setShowError(event.target.value.trim() === "");
   };
 
   const handleClick = () => {
-    setShowError(false); // Hide the error message when input is clicked again
+    // Hide the error message when input is clicked again
+    setShowError(false);
   };
 
   return (
@@ -32,7 +28,7 @@ const YourComponent: React.FC = () => {
       <input
         type="text"
         placeholder="First Name"
-        className="input_box"
+        className="border-top-0"
         onBlur={handleBlur}
         onClick={handleClick}
       />
@@ -40,4 +36,4 @@ const YourComponent: React.FC = () => {
   );
 };
 
-export default YourComponent;
+export default MyError;

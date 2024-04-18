@@ -17,7 +17,7 @@ const CheckBox: React.FC = () => {
   return (
     <div className="w-full md:mb-0 space-y-4">
       <div className="flex flex-col">
-        <label className="custom-label">
+        <span className="custom-span">
           <input
             type="checkbox"
             checked={isChecked}
@@ -25,18 +25,18 @@ const CheckBox: React.FC = () => {
             className="mr-2 mt-4"
           />{" "}
           By submitting this form I accept{" "}
-          <a href="/" className="blue-text">
+          <a href="/" className="custom-a">
             privacy policy
           </a>{" "}
           and{" "}
-          <a href="/" className="blue-text">
+          <a href="/" className="custom-a">
             cookie policy
           </a>
           . *
-        </label>
+        </span>
       </div>
       <div className="flex flex-col">
-        <label>
+        <span className="custom-span">
           <input
             type="checkbox"
             checked={isChecked1}
@@ -44,7 +44,7 @@ const CheckBox: React.FC = () => {
             className="mr-2"
           />{" "}
           I would like to receive your newsletter.
-        </label>
+        </span>
       </div>
     </div>
   );
