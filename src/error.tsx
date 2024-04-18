@@ -28,7 +28,7 @@ const MyError: React.FC = () => {
       <input
         type="text"
         placeholder="First Name"
-        className="border-top-0"
+        className="input_box"
         onBlur={handleBlur}
         onClick={handleClick}
       />
