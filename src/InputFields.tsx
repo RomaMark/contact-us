@@ -1,6 +1,7 @@
 import CheckBox from "./CheckBox";
 import CountrySelector from "./CountrySelector";
 import MyError from "./error";
+import "./static/styles.css";
 
 const InputFields = () => {
   return (

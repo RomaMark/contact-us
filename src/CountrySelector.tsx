@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
-import "./styles.css";
+import "./static/styles.css";
 
 const GetCountry: React.FC = () => {
   const [selected, setSelected] = useState("");
