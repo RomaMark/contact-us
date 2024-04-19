@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 
 const CheckBox: React.FC = () => {
-  const [isChecked, setIsChecked] = useState(false);
-  const [isChecked1, setIsChecked1] = useState(false);
+  const [isPrivacyChecked, setIsPrivacyChecked] = useState(false);
+  const [isNewsLetterChecked, setIsNewsLetterChecked] = useState(false);
 
-  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setIsChecked(event.target.checked);
-  };
-
-  const handleCheckboxChange1 = (
+  const handlePolicyCheckboxChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
-    setIsChecked1(event.target.checked);
+    setIsPrivacyChecked(event.target.checked);
+  };
+
+  const handleNewsLetterCheckboxChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setIsNewsLetterChecked(event.target.checked);
   };
 
   return (
@@ -20,30 +22,30 @@ const CheckBox: React.FC = () => {
         <span className="custom-span">
           <input
             type="checkbox"
-            checked={isChecked}
-            onChange={handleCheckboxChange}
+            checked={isPrivacyChecked}
+            onChange={handlePolicyCheckboxChange}
             className="mr-2 mt-4"
-          />{" "}
-          By submitting this form I accept{" "}
+          />
+          {"By submitting this form I accept "}
           <a href="/" className="custom-a">
             privacy policy
-          </a>{" "}
-          and{" "}
+          </a>
+          {" and "}
           <a href="/" className="custom-a">
             cookie policy
           </a>
-          . *
+          {". *"}
         </span>
       </div>
       <div className="flex flex-col">
         <span className="custom-span">
           <input
             type="checkbox"
-            checked={isChecked1}
-            onChange={handleCheckboxChange1}
+            checked={isNewsLetterChecked}
+            onChange={handleNewsLetterCheckboxChange}
             className="mr-2"
-          />{" "}
-          I would like to receive your newsletter.
+          />
+          {"I would like to receive your newsletter."}
         </span>
       </div>
     </div>

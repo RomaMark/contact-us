@@ -1,4 +1,4 @@
-import InputFields from "./InputFields";
+import InputFields from "./InputFormView/InputForm";
 
 export default function App() {
   return (
