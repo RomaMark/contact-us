@@ -1,5 +1,4 @@
 import InputFields from "./InputFields";
-import "./static/styles.css";
 
 export default function App() {
   return (

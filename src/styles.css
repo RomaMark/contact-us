@@ -4,14 +4,16 @@
 
 @font-face {
   font-family: recklessFont;
-  src: url(../fonts/RecklessNeue-Thin.ttf);
+  src: url(./fonts/RecklessNeue-Thin.ttf);
 }
 
 html {
   font-size: 15.5px;
+  min-width: 45%;
 }
 
 body {
+  height: 100vh;
   align-items: center;
   background-color: rgb(167 208 216);
 }
@@ -19,7 +21,8 @@ body {
 h1 {
   font-family: recklessFont, ui-serif, Georgia, Cambria, Times New Roman, Times,
     serif;
-  font-size: 3rem;
+  color: #140a24;
+  font-size: 48px;
   letter-spacing: -0.02em;
   line-height: 3.75rem;
 }
@@ -115,9 +118,11 @@ p {
 }
 
 .container-size {
-  width: 39%;
-  padding: 35px 60px;
+  width: 45%;
+  min-width: 300px;
+  padding: 32px 64px;
 }
+
 .ReactFlagsSelect-module_selectBtn__19wW7 {
   border-radius: 0.5rem !important;
   border-width: 1px !important;

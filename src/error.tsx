@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./static/styles.css";
 
 const MyError: React.FC = () => {
   const [showError, setShowError] = useState(false);
