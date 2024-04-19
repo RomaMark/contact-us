@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: recklessFont;
-  src: url(./fonts/RecklessNeue-Thin.ttf);
+  src: url(../public/fonts/RecklessNeue-Thin.ttf);
 }
 
 html {
