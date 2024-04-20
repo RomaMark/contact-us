@@ -7,9 +7,11 @@
   src: url(../public/fonts/RecklessNeue-Thin.ttf);
 }
 
-html {
-  font-size: 15.5px;
-  min-width: 45%;
+@media (max-width: 1024px) {
+  .app {
+    display: flex;
+    text-align: start;
+  }
 }
 
 body {
@@ -91,13 +93,6 @@ p {
   cursor: pointer;
 }
 
-@media (min-height: 900px) {
-  .tall-md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
 .hs-error-msg.visible {
   display: block;
   color: rgb(240, 68, 56);
@@ -109,18 +104,12 @@ p {
   margin-top: -8px;
 }
 
-.input_box .hs-error-msg.visible {
-  border-top: none;
-}
-
 .hs-error-msg.hidden {
   display: none;
 }
 
 .container-size {
-  width: 45%;
-  min-width: 300px;
-  padding: 32px 64px;
+  width: 690px;
 }
 
 .ReactFlagsSelect-module_selectBtn__19wW7 {

@@ -8,7 +8,6 @@ const MyError: React.FC = () => {
   };
 
   const handleClick = () => {
-    // Hide the error message when input is clicked again
     setShowError(false);
   };
 

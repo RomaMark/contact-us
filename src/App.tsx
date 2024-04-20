@@ -2,7 +2,7 @@ import InputFields from "./InputFormView/InputForm";
 
 export default function App() {
   return (
-    <div className="flex flex-wrap justify-center grid-cols-1 mt-[4%] lg:[grid-template-columns:35%_65%] sm:px-10 md:px-16 lg:px-10 xl:px-20">
+    <div className="app mx-auto md:max-w-screen-s flex justify-center grid-cols-1 mt-[4%] sm:px-10 md:px-16 lg:px-10 xl:px-20">
       <div className="sm:text-left md:space-y-7 lg:pb-0">
         <div>
           <p className="mb-2 text-xl md:text-4xl">Media enquiries:</p>

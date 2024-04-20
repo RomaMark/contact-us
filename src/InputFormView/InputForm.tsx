@@ -1,6 +1,6 @@
 import CheckBox from "./Components/CheckBox";
 import CountrySelector from "./Components/CountrySelector";
-import MyError from "./Components/error";
+import MyError from "./Components/Error";
 
 const InputFields = () => {
   return (
