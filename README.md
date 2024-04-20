@@ -1,5 +1,7 @@
 # Contact us
 
+TEST
+
 ## Instructions for setup
 
 1. Clone the project
