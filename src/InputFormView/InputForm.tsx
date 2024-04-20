@@ -1,8 +1,14 @@
+import { useState } from "react";
 import CheckBox from "./Components/CheckBox";
 import CountrySelector from "./Components/CountrySelector";
 import MyError from "./Components/Error";
 
 const InputFields = () => {
+  const [firstNameError] = useState(false);
+  const [lastNameError] = useState(false);
+  const [emailError] = useState(false);
+  const [companyNameError] = useState(false);
+
   return (
     <div className="container-size bg-white rounded-[40px] py-8 px-16 ml-28">
       <div className="flex mb-10">
@@ -29,19 +35,15 @@ const InputFields = () => {
       </div>
       <div className="max-h-screen flex flex-wrap -mx-2 mb-4">
         <div className="md:w-1/2 px-2 mb-4 md:mb-0">
-          <MyError />
+          <MyError showError={firstNameError} label="First Name" />
         </div>
         <div className="w-full md:w-1/2 px-2">
-          <input
-            type="text"
-            placeholder="Last Name"
-            className="input_box"
-          ></input>
+          <MyError showError={lastNameError} label="Last Name" />
         </div>
       </div>
       <div className="max-h-screen flex flex-wrap -mx-2 mb-4">
         <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
-          <input type="email" placeholder="Email" className="input_box"></input>
+          <MyError showError={emailError} label="Email" />
         </div>
         <div className="w-full md:w-1/2 px-2">
           <input
@@ -56,11 +58,7 @@ const InputFields = () => {
           <CountrySelector />
         </div>
         <div className="w-full md:w-1/2 px-2">
-          <input
-            type="text"
-            placeholder="Company name"
-            className="input_box"
-          ></input>
+          <MyError showError={companyNameError} label="Company Name" />
         </div>
       </div>
       <div>

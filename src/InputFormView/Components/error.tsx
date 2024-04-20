@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-const MyError: React.FC = () => {
+interface ErrorProps {
+  label: string;
+  showError: boolean;
+}
+
+const MyError: React.FC<ErrorProps> = ({ label }) => {
   const [showError, setShowError] = useState(false);
 
   const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
@@ -13,20 +18,16 @@ const MyError: React.FC = () => {
 
   return (
     <div>
-      <ul className="no-list hs-error-msgs inputs-list" role="alert">
+      <ul>
         <li>
-          <label
-            className={`hs-error-msg hs-main-font-element ${
-              showError ? "visible" : "hidden"
-            }`}
-          >
-            Please complete this required field.
+          <label className={`hs-error-msg ${showError ? "visible" : "hidden"}`}>
+            {`Please complete this required field.`}
           </label>
         </li>
       </ul>
       <input
         type="text"
-        placeholder="First Name"
+        placeholder={label}
         className="input_box"
         onBlur={handleBlur}
         onClick={handleClick}
