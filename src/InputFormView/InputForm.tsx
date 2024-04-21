@@ -35,10 +35,10 @@ const InputFields = () => {
       </div>
       <div className="max-h-screen flex flex-wrap -mx-2 mb-4">
         <div className="md:w-1/2 px-2 mb-4 md:mb-0">
-          <MyError showError={firstNameError} label="First Name" />
+          <MyError showError={firstNameError} label="First name" />
         </div>
         <div className="w-full md:w-1/2 px-2">
-          <MyError showError={lastNameError} label="Last Name" />
+          <MyError showError={lastNameError} label="Last name" />
         </div>
       </div>
       <div className="max-h-screen flex flex-wrap -mx-2 mb-4">
@@ -58,7 +58,7 @@ const InputFields = () => {
           <CountrySelector />
         </div>
         <div className="w-full md:w-1/2 px-2">
-          <MyError showError={companyNameError} label="Company Name" />
+          <MyError showError={companyNameError} label="Company name" />
         </div>
       </div>
       <div>
