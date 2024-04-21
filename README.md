@@ -10,11 +10,15 @@
 
    `cd contact-us`
 
-3. Get all required dependencies and start the project
+3. Get all required dependencies
 
-   `npm i && npm start`
+   `npm i`
 
-4. App is running in the development mode
+4. Start the project
+
+   `npm start`
+
+5. App is running in the development mode
 
    Open [link](http://localhost:3000) to view it in the browser
 
